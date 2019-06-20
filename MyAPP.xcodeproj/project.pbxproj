@@ -15,6 +15,11 @@
 		A11DA68122A49AF000F83666 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11DA68022A49AF000F83666 /* StartView.swift */; };
 		A11DA68322A4A3A800F83666 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11DA68222A4A3A800F83666 /* MainTableViewController.swift */; };
 		A11DA68522A4AA7700F83666 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11DA68422A4AA7700F83666 /* DetailView.swift */; };
+		A180002422BADCC80058779A /* ParticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A180002322BADCC80058779A /* ParticleView.swift */; };
+		A180004922BAFE140058779A /* particle.png in Resources */ = {isa = PBXBuildFile; fileRef = A180004822BAFE140058779A /* particle.png */; settings = {ASSET_TAGS = (Particle, ); }; };
+		A180004B22BB0C090058779A /* night.swift in Sources */ = {isa = PBXBuildFile; fileRef = A180004A22BB0C090058779A /* night.swift */; };
+		A180004D22BB0C440058779A /* MidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A180004C22BB0C440058779A /* MidViewController.swift */; };
+		A180004F22BB18AF0058779A /* Festival.swift in Sources */ = {isa = PBXBuildFile; fileRef = A180004E22BB18AF0058779A /* Festival.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		A11DA68022A49AF000F83666 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		A11DA68222A4A3A800F83666 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		A11DA68422A4AA7700F83666 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		A180002322BADCC80058779A /* ParticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleView.swift; sourceTree = "<group>"; };
+		A180004822BAFE140058779A /* particle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = particle.png; path = Assets.xcassets/particle.png; sourceTree = "<group>"; };
+		A180004A22BB0C090058779A /* night.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = night.swift; sourceTree = "<group>"; };
+		A180004C22BB0C440058779A /* MidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidViewController.swift; sourceTree = "<group>"; };
+		A180004E22BB18AF0058779A /* Festival.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Festival.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,11 +74,16 @@
 				A11DA67022A4724A00F83666 /* ViewController.swift */,
 				A11DA67222A4724A00F83666 /* Main.storyboard */,
 				A11DA67522A4724C00F83666 /* Assets.xcassets */,
+				A180004822BAFE140058779A /* particle.png */,
 				A11DA67722A4724C00F83666 /* LaunchScreen.storyboard */,
 				A11DA67A22A4724C00F83666 /* Info.plist */,
 				A11DA68022A49AF000F83666 /* StartView.swift */,
 				A11DA68222A4A3A800F83666 /* MainTableViewController.swift */,
 				A11DA68422A4AA7700F83666 /* DetailView.swift */,
+				A180002322BADCC80058779A /* ParticleView.swift */,
+				A180004A22BB0C090058779A /* night.swift */,
+				A180004C22BB0C440058779A /* MidViewController.swift */,
+				A180004E22BB18AF0058779A /* Festival.swift */,
 			);
 			path = MyAPP;
 			sourceTree = "<group>";
@@ -99,6 +114,9 @@
 		A11DA66322A4724A00F83666 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					Particle,
+				);
 				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = kpugame;
@@ -134,6 +152,7 @@
 				A11DA67922A4724C00F83666 /* LaunchScreen.storyboard in Resources */,
 				A11DA67622A4724C00F83666 /* Assets.xcassets in Resources */,
 				A11DA67422A4724A00F83666 /* Main.storyboard in Resources */,
+				A180004922BAFE140058779A /* particle.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,11 +163,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A180004B22BB0C090058779A /* night.swift in Sources */,
 				A11DA68322A4A3A800F83666 /* MainTableViewController.swift in Sources */,
 				A11DA68122A49AF000F83666 /* StartView.swift in Sources */,
+				A180004D22BB0C440058779A /* MidViewController.swift in Sources */,
 				A11DA67122A4724A00F83666 /* ViewController.swift in Sources */,
+				A180002422BADCC80058779A /* ParticleView.swift in Sources */,
 				A11DA68522A4AA7700F83666 /* DetailView.swift in Sources */,
 				A11DA66F22A4724A00F83666 /* AppDelegate.swift in Sources */,
+				A180004F22BB18AF0058779A /* Festival.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

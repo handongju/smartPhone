@@ -18,6 +18,8 @@ class MainTableViewController: UITableViewController, XMLParserDelegate {
     var url : String?
     var url2 : String?
     
+    var area : String = ""
+    
     var parser = XMLParser()
     
     var posts = NSMutableArray()
@@ -133,6 +135,10 @@ class MainTableViewController: UITableViewController, XMLParserDelegate {
                         hospitalTableViewController.imageurl2 = (posts.object(at: (indexPath?.row)!) as AnyObject).value(forKey: "firstimage2") as! NSString as String
                         hospitalTableViewController.backurl = url
                         hospitalTableViewController.url = "http://api.visitkorea.or.kr/openapi/service/rest/KorService/detailIntro?serviceKey=2JbWDZIHJ7vUfhRi3O566G%2F0uJ8GrrN3IlDBv29Z6B3neQS2lOMJVt6kHEXPJ7Vm7ExmirVqnnlIULdcScuiDQ%3D%3D&numOfRows=10&pageNo=1&MobileOS=ETC&MobileApp=AppTest&contentId=" + ((posts.object(at: (indexPath?.row)!) as AnyObject).value(forKey: "contentid") as! NSString as String) as String + "&contentTypeId=12"
+                        
+                        hospitalTableViewController.area = area
+                        print(area)
+                        
                     }
                 }
             }

@@ -15,6 +15,7 @@ class DetailView: UIViewController, UITableViewDelegate, UITableViewDataSource, 
     var backurl: String?
     
     var url : String?
+    var area : String = "1"
     var imageurl : String?
     var imageurl2 : String?
         
@@ -157,7 +158,6 @@ class DetailView: UIViewController, UITableViewDelegate, UITableViewDataSource, 
         
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = tableView.dequeueReusableCell(withIdentifier: "DetailCell", for: indexPath)
-            print(indexPath.row)
             cell.textLabel?.text = postsName[indexPath.row]
             cell.detailTextLabel?.text = posts[indexPath.row]
             return cell
@@ -190,9 +190,12 @@ class DetailView: UIViewController, UITableViewDelegate, UITableViewDataSource, 
         }
     }
     
+    
     func scrollViewDidScroll(_ scorollView: UIScrollView){
+        
         loadVisiblePages()
     }
+    
     
     func loadPage(_ page: Int){
         if page < 0 || page >= pageImages.count{
@@ -228,7 +231,16 @@ class DetailView: UIViewController, UITableViewDelegate, UITableViewDataSource, 
                 }
             }
         }
+        
+        if segue.identifier == "Send"{
+            if let navController = segue.destination as? UIViewController{
+                if let cont = navController as? MidViewController{
+                    cont.area = area
+                    print(area)
+                }
+            }
+        }
     }
     
-        
+    
 }

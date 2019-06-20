@@ -20,6 +20,8 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
             if let navController = segue.destination as? UINavigationController{
                 if let hospitalTableViewController = navController.topViewController as? MainTableViewController{
                     hospitalTableViewController.url = url + sgguCd + "&sigunguCode=4&listYN=Y"
+                    hospitalTableViewController.area = sgguCd
+                    print(hospitalTableViewController.area)
                 }
             }
         }
